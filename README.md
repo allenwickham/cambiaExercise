@@ -1,4 +1,32 @@
 # Cambia Exercise Answers
+##  Programming example
+>Try to answer in a way that helps us understand not only what you know, but also how you think. Be prepared to talk about any of these answers in a follow-up interview session.
+>
+>Imagine a CSV file called `input.csv, which contains a single line of comma-separated strings. This single line is terminated with a new line character. Using any code language, write a program that reads `input.csv`, sorts its strings into descending alphabetical order, and writes the sorted strings in comma-separated format to a new file called `output.csv`.
+>
+>Here are sample contents of these two files (but your program should handle other content as well):
+>
+>* input file: `Copenhagen,Stockholm,Oslo`
+>* output file: `Stockholm,Oslo,Copenhagen`
+- I've been able to get the solution to run from the command-line. Use mvn clean install to build. Then
+use do the following at the command line:
+    - cd docker
+    - java -jar cambia-exercise-0.0.1-SNAPSHOT.jar ../src/main/resources/input.csv
+>
+>The solution must be runnable with a Docker command (ie., Dockerfile).  
+- I was able to generate a Dockerfile with the commands that should run my processor, but I've been unable
+to get to run and generate a file using Docker.
+
+## Gherkin questions
+- > Write Gherkin tests for the program you wrote above. Use any Gherkin features or practices you want. Don’t write step definitions (_i.e., the tests don’t have to be executable).
+Explain in detail why these tests might be helpful in the future.
+- I'm sorry, I'm not versed in the Gherkin language, nor Cucumber. I'm not able to generate real tests
+using them. However, if I were to write out pseudo code test in the Gherkin style, they would be like this
+    - Feature: Golden Path to sort an incoming file.
+    - Given: I have a file to process.
+    - Then: When I run the processor, it will respond with a file called output.csv with the contents of
+    input file sorted in descending order.
+
 ## Tool questions
 - > In your opinion, what’s helpful about version control systems?
   - Version control systems (VCSs) allow groups of people to work on a known set of software, while maintaining the changes made by previous groups.  Often, VCSs allow multiple groups to work on the same known set of software without allowing the groups to be affected by the other, while providing tools to merge the respective groups' changes.
